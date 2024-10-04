@@ -3,8 +3,7 @@ const express = require('express');
 const jwt = require('jsonwebtoken'); 
 const bcrypt = require('bcrypt'); 
 const router = express.Router(); 
-const cors = require('cors');
-router.use(cors());//use cors
+
 
 let adminPasswordHash; // Variable to hold the hashed admin password
 

@@ -1,8 +1,7 @@
 const express = require('express');
 const app = express();
 require('dotenv').config(); // Load environment variables from .env file
-const cors = require('cors');
-app.use(cors());//use cors
+
 
 // Import routes
 const loginRoutes = require('./routes/login'); 
