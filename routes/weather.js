@@ -1,6 +1,8 @@
 const express = require('express');
 const axios = require('axios');
 const router = express.Router();
+const cors = require('cors');
+router.use(cors());//use cors
 
 // Get temperature based on latitude and longitude
 router.get('/', async (req, res) => {
